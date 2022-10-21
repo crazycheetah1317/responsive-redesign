@@ -1,0 +1,483 @@
+/* General Styling */
+:root {
+  margin: 0;
+  padding: 0;
+  --background-color: #ECEFFA;
+  --primary-color: #BCCEFB;
+  --secondary-color: #4E70C5;
+  --text-color: #101010;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Bradley Hand, cursive;
+  text-align: center;
+  display: block;
+  font-size: 5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+h2 {
+  font-family: Croissant One;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  font-size: 2.25rem;
+  color: var(--text-color);
+}
+
+h3 {
+  font-family: Bradley Hand, cursive;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+h4 {
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+p {
+  font-family: Didot, serif;
+  text-align: left;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Navigation Bar */
+ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  justify-content: center;
+  text-align: center;
+}
+  
+li {
+  float: left;
+  width: auto;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+}
+  
+li a {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  padding: 2.5rem 1.5rem;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  padding: 1.5rem 1rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+#ham-menu {
+  padding: 2rem 1rem;
+}
+
+#ham-menu > svg:hover {
+  cursor: pointer;
+}
+
+/* Social Media Navigation Bar */
+.socials-flex-top {
+  padding: 2.5rem 1.5rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+
+.socials-flex-top > div {
+  margin: 0.25rem;
+}
+
+.pages {
+  text-align: center;
+  font-size: 1.15rem;
+}
+  
+li a:hover {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+}
+
+.mobile-display {
+  display: none;
+}
+
+  /* Main */
+  .main {
+    margin: 3rem;
+  }
+
+  .blurb {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  /* Buttons */
+  .buttons-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    justify-content: center;
+  }
+  
+  .buttons-flex > div {
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about-us {
+    background-image: url(nb-about-us.jpeg);
+    background-size: cover;
+  }
+
+  #menu {
+    background-image: url(nb-menu.jpeg);
+    background-size: cover;
+  }
+
+  #order-online {
+    background-image: url(nb-order-online.jpeg);
+    background-size: cover;
+  }
+
+  #visit-us {
+    background-image: url(nb-visit-us.jpeg);
+    background-size: cover;
+  }
+
+  .buttons-flex > div > button {
+    background-color: var(--background-color);
+    width: 9rem;
+    height: 3rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0.4rem 0.3rem var(--primary-color);
+    justify-content: center;
+  }
+
+  .buttons-flex > div > button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    justify-content: center;
+  }
+
+  .footer-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    justify-content: center;
+  }
+
+  .footer-flex > div {
+    width: 25%;
+    height: 5rem;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-flex > div:nth-of-type(2) {
+    width: 50%;
+  }
+
+  .locations-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    justify-content: center;
+    margin: 0px;
+
+  }
+
+  .locations-flex > div {
+    width: 100%;
+    height: 1rem;
+    margin: 0px;
+    border-radius: 15px;
+    justify-content: center;
+  }
+
+  .outer-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .outer-flex > div {
+    margin-bottom: 0.5rem;
+  }
+
+  .reservations > button {
+    background-color: var(--background-color);
+    width: 9rem;
+    height: 3rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 15px;
+    border-color: transparent;
+    box-shadow: 0.4rem 0.3rem var(--primary-color);
+    justify-content: center;
+  }
+
+  .reservations > button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+
+/* Social Media Footer */
+.socials-flex-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+
+.socials-flex-bottom > div {
+  margin: 0.25rem;
+}
+
+#email {
+  margin-right: 0.5rem;
+}
+
+#facebook > svg:hover {
+  fill: var(--secondary-color);
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+#email > svg:hover {
+  fill: var(--secondary-color);
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+#instagram > svg:hover {
+  fill: var(--secondary-color);
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+
+/* Slideshow */
+* {box-sizing: border-box}
+
+/* Hide images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 50%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 50%;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.slideshow-container > div > img {
+  width:100%;
+  height: 29rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--primary-color);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots-div {
+  padding-top: 1.5rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Media Fitting */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .mobile-display {
+    display: block;
+  }
+
+  .buttons-flex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .box {
+    border-radius: 15px;
+    align-items: center;
+  }
+
+  .buttons-flex > div > button {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .reservations > button {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
